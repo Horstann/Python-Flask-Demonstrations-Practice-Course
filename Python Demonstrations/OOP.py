@@ -1,7 +1,9 @@
 class complexNo:
+    # Constructor
     def __init__(self, real=0, img=0):
         self.real = real
         self.img = img
+    # Method
     def displayComplex(self):
         print(f"Your complex number = {self.real} + {self.img}i")
 
