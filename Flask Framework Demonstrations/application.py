@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Hello world!"
+    return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
@@ -15,7 +15,7 @@ To set up virtual environment, type this in terminal:
 # Create virtual environment, which name is "env"
 virtualenv env
 # Activate "env"
-source env\Scripts\activate.bat
+source env\\Scripts\\activate.bat
 # Provide environment variables
 export FLASK_APP=application.py
 export FLASK_DEBUG=1
